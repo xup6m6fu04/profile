@@ -36,11 +36,11 @@ after('deploy:failed', 'deploy:unlock');
 
 // Migrate database before symlink new release.
 
-task('init', function() {
+/*task('init', function() {
    run('cp /home/ubuntu/web/profile/current/.env.example /home/ubuntu/web/profile/shared/.env');
    run('cd /home/ubuntu/web/profile/current && /usr/bin/php artisan key:generate');
    run('cd /home/ubuntu/web/profile/current && /usr/bin/php artisan config:cache');
-});
+});*/
 
-after('cleanup', 'init');
+/*after('cleanup', 'init');*/
 
