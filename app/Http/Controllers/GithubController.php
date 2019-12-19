@@ -9,6 +9,6 @@ class GithubController extends Controller
 {
     public function event(Request $request)
     {
-        Log::debug(json_encode($request->all()));
+        Log::debug($request->all());
     }
 }
