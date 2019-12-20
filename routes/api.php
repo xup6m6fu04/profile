@@ -13,4 +13,3 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::post('/github-event', 'GithubController@event');
